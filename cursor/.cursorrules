@@ -1,0 +1,185 @@
+# Cursor AI Rules
+
+## Project Context
+
+This project uses AI-assisted development with Cursor IDE, emphasizing code quality, maintainability, and structured problem-solving. These rules guide all code generation, analysis, and recommendations.
+
+## Core Development Principles
+
+### Code Quality Standards
+- Prioritize simple, readable code with minimal abstraction
+- Avoid premature optimization
+- Write pure functions (no input mutation; return new values)
+- Keep functions focused and single-purpose
+- Document complex logic clearly
+- Use TypeScript for type safety where applicable
+- Prefer functional components over classes
+
+### Code Style
+- Use consistent naming conventions (camelCase for variables/functions, PascalCase for components/classes)
+- Keep files focused on a single responsibility
+- Limit file length to maintain readability
+- Group related functionality together
+- Follow existing patterns in the codebase
+
+## Quality & Testing
+
+### Testing Requirements
+- Write tests alongside new features
+- Maintain test coverage for critical paths
+- Use existing test infrastructure and patterns
+- Test edge cases and error conditions
+- Ensure no regression in existing functionality
+
+### Quality Assurance Tools
+Apply structured problem-solving approaches:
+
+**Root Cause Analysis**
+- Use 5 Whys technique for drilling down to root causes
+- Apply Fishbone diagrams for complex, multi-factor issues
+- Verify suspected causes before implementing fixes
+
+**Continuous Improvement**
+- Follow PDCA cycle: Plan → Do → Check → Act
+- Use Pareto analysis to prioritize high-impact issues
+- Document learnings to prevent recurrence
+
+**Problem-Solving Steps**
+1. Define the problem with measurable impact
+2. Map the process and identify issue location
+3. Analyze root causes
+4. Prioritize solutions
+5. Test and verify fixes
+6. Document and prevent recurrence
+
+## Architecture & Patterns
+
+### File Organization
+- Follow the existing directory structure
+- Place components in appropriate folders
+- Keep related files together
+- Use index files for clean imports
+
+### API & Data Handling
+- Validate inputs at boundaries
+- Handle errors gracefully with user-friendly messages
+- Use proper HTTP status codes
+- Implement proper error logging
+- Sanitize outputs to prevent injection attacks
+
+### State Management
+- Keep state as local as possible
+- Avoid unnecessary global state
+- Use appropriate state management for scale
+- Document state flow for complex features
+
+## Development Workflow
+
+### Feature Development
+1. Analyze the codebase to understand relevant architecture
+2. Review existing patterns
+3. Break work into small, testable increments
+4. Implement with tests
+5. Document new patterns or decisions
+6. Update relevant documentation
+
+### Bug Fixing
+1. Reproduce the issue
+2. Analyze root cause using structured methods
+3. Identify affected files and components
+4. Develop multiple solution approaches
+5. Choose the simplest, most maintainable fix
+6. Test thoroughly including edge cases
+7. Update documentation as needed
+
+### Refactoring
+- Make changes incrementally
+- Maintain backward compatibility where possible
+- Keep refactoring separate from feature work
+- Ensure tests pass after each change
+- Document architectural decisions
+
+## Documentation
+
+### Code Documentation
+- Write self-documenting code with clear names
+- Add comments for complex algorithms or business logic
+- Document public APIs and interfaces
+- Keep comments up-to-date with code changes
+
+### Project Documentation
+- Update README for significant changes
+- Maintain architecture documentation
+- Document setup and deployment procedures
+- Keep dependency information current
+
+## Security & Performance
+
+### Security Best Practices
+- Validate and sanitize all inputs
+- Use parameterized queries for database access
+- Implement proper authentication and authorization
+- Keep dependencies updated
+- Don't commit secrets or credentials
+- Follow principle of least privilege
+
+### Performance Considerations
+- Optimize only when necessary and measurable
+- Profile before optimizing
+- Consider algorithmic complexity for large data sets
+- Implement caching strategically
+- Use lazy loading where appropriate
+
+## Error Handling
+
+- Catch errors at appropriate levels
+- Provide meaningful error messages
+- Log errors with sufficient context
+- Fail gracefully with user-friendly feedback
+- Implement proper error boundaries
+
+## Git & Version Control
+
+### Commit Practices
+- Write clear, descriptive commit messages
+- Make small, focused commits
+- Keep commits atomic and reversible
+- Reference issue numbers when applicable
+
+### Branching
+- Follow established branching strategy
+- Keep branches focused and short-lived
+- Rebase or merge according to team conventions
+- Clean up merged branches
+
+## Communication & Collaboration
+
+### Code Reviews
+- Review for logic, style, and maintainability
+- Check test coverage
+- Verify documentation updates
+- Ensure no security vulnerabilities
+- Provide constructive feedback
+
+### Team Alignment
+- Follow team coding standards
+- Discuss major architectural changes
+- Share knowledge and learnings
+- Keep documentation accessible
+
+## Available Commands
+
+Reference structured commands for common tasks:
+- `/rca` - Root cause analysis
+- `/5whys` - 5 Whys analysis
+- `/fishbone` - Fishbone diagram
+- `/createAgilePlan` - Feature planning
+- `/createAgileSprint` - Sprint planning
+
+## Notes
+
+- Treat every coding issue as a process problem
+- Use structured thinking over guesswork
+- Leverage data and analysis for decisions
+- Maintain consistency with existing code
+- Balance perfection with pragmatism
